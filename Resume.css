@@ -122,7 +122,7 @@ section:nth-child(2n+1){
 #skills{
     flex-direction: column;
 }
-#skill-display{
+.skill-display{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -131,18 +131,25 @@ section:nth-child(2n+1){
     margin-bottom: 4%;
 }
 .skill-progress{
-    background-color:burlywood;
+    background-color:lightgrey;
     width:16rem;
     height: 3rem;
-    border-radius: 1rem;
+    border-radius: 2rem;
     margin: 3%;
 }
 .skill-progress>div{
     border-radius: 20px 0px 0px 20px;
 }
+.skill-name{
+    position: relative;
+    
+}
 .skill-name span{
     color: white;
-    margin-left: 6px;
+    position: absolute;
+    left: 10%;
+    margin-top: 8%;
+    
 }
 @media screen and (max-width:600px){
     #skill-display{
@@ -225,11 +232,17 @@ section:nth-child(2n+1){
 .travel-road{
     width: 0;
     height: 75%;
-    border: 2px dashed rgb(157, 213, 235);
     position: absolute;
     left: 50%;
     top: 6%;
 }
+.travel-road-color-white{
+    border: 2px dashed white;
+}
+.travel-road-color-blue{
+    border: 2px dashed rgb(157, 213, 235);
+}
+
 #travel-plane{
     position: sticky;
     top:25%;
@@ -244,7 +257,7 @@ section:nth-child(2n+1){
     border-radius: 50%;
     height: 0.5rem;
     width: 0.5rem;
-    background-color: rgb(217, 15, 106);
+    background-color: gray;
     z-index: 1;
 }
 .exp-box:nth-child(2n)::after{
@@ -255,7 +268,7 @@ section:nth-child(2n+1){
     border-radius: 50%;
     height: 0.5rem;
     width: 0.5rem;
-    background-color: rgb(217, 15, 106);
+    background-color: gray;
     z-index: 1;
 }
 
@@ -293,6 +306,7 @@ section:nth-child(2n+1){
 }
 .pimage{
  position: relative;
+    margin-bottom: 10px;
 }
 #prt-container img{
     height: 225px;
@@ -319,7 +333,6 @@ section:nth-child(2n+1){
 #contact{
     flex-direction: column;
     background: linear-gradient(120deg,#2857a4,#403066);
-    height: 100vh;
 }
 /*--------------------------CONTACT-FORM---------------------*/
 .name1{
